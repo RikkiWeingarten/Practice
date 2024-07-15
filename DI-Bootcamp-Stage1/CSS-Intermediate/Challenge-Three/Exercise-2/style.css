@@ -1,0 +1,34 @@
+body {
+    margin: 20px;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: #9d79b3;
+    width: 100%;
+    height: 200px;
+    border-style:solid;
+}
+#sections {
+    display: flex;
+    margin-top: 20px;
+}
+#left-section {
+    background-color: #cf6575;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+#middle-section {
+    background-color: #85c983;
+    justify-content: center;
+}
+#right-section {
+    background-color: #db9d18;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+.col {
+    width: 33.3333%;
+    height: 600px;
+    border-style: solid;
+}
