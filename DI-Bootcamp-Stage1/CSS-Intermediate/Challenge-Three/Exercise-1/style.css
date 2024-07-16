@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.left {
+    background-color: salmon;
+    width: 25%;
+}
+.right {
+    background-color: lightblue;
+    width: 60%;
+}
+.left, .right, .bottom {
+    height: 140px;
+    border-style: solid;
+    
+}
+.bottom {
+    background-color: yellow;
+    width: 90%;
+    display: flex;
+    margin:auto;
+}
