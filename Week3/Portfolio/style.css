@@ -1,0 +1,128 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h1, p {
+    color: #323842FF;
+}
+.name {
+    font-size: 30px;
+}
+.lead a {
+    text-decoration: none;
+}
+.headshot {
+    margin-left: 200px;
+    border-radius: 0 0 300px 300px;
+    padding-top: 40px;
+}
+.title {
+    padding-top: 250px;
+}
+.title b {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+}
+.lead a{
+    color: #E34D73;
+    padding-left: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.chevron {
+    font-size: 8px;
+}
+.description {
+    font-family: "Sarabun", sans-serif;
+}
+.projects-logo {
+    position: absolute;
+    margin-top: 500px;
+}
+.jumbotron {
+    height: 800px;
+}
+.project-1 {
+    background-color: rgba(161, 211, 86, .1);
+}
+.project-2 {
+    background-color: rgba(255, 130, 148, .1)
+}
+.card-1 {
+    border-color: rgba(161, 211, 86, .1);
+}
+
+.card-2 {
+    border-color: rgba(255, 130, 148, .1)
+}
+.left-arrow {
+    padding-left: 8px;
+    font-weight: bold;
+}
+.card-link {
+    text-decoration: none;
+    color: #424955FF;
+}
+.card-title-1 {
+    color: #81B72FFF;
+}
+.card-title-2 {
+    color: #E34D73FF;
+}
+
+.browse-projects {
+    height: 52px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", 'sans-serif';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #E34D73FF;
+    /* primary-500 */
+    background: #00000000;
+    /* transparent */
+    opacity: 1;
+    border-radius: 4px;
+    /* border-m */
+    border-width: 1px;
+    border-color: #E34D73FF;
+    /* primary-500 */
+    border-style: solid;
+    margin-top: 70px;
+}
+
+/* Hover */
+.browse-projects:hover {
+    color: #D4214EFF;
+    /* primary-600 */
+    background: #00000000;
+    /* transparent */
+}
+
+/* Pressed */
+.browse-projects:hover:active {
+    color: #BA1D44FF;
+    /* primary-650 */
+    background: #00000000;
+    /* transparent */
+}
+
+/* Disabled */
+.browse-projects:disabled {
+    opacity: 0.4;
+}
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    background: white;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+}
