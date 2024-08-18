@@ -74,7 +74,7 @@ def play():
 
     if check_win('X'):
         print("player X wins!")
-    elif check_win('Y'):
+    elif check_win('O'):
         print("player O wins!")
     else:
         print("It's a tie!")
