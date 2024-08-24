@@ -1,0 +1,29 @@
+span {
+    background-color: yellow;
+}
+.image-title {
+    display: flex;
+    justify-content: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border: solid 5px red;
+}
+.char-title {
+    color: red;
+    display: flex;
+    justify-content: center;
+    border: solid 1.5px red;
+}
+th, td {
+    border: solid 1.5px;
+}
+nav {
+    display: inline-block;
+    justify-content: center;
+}
+
+input#sign-in {
+    background-color: rgb(46, 126, 245)
+}

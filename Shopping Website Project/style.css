@@ -1,0 +1,28 @@
+nav {
+    padding: 14px 16px;
+    background-color: black;
+}
+
+nav ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+.nav_link a {
+    text-decoration: none;
+    color: white;
+}
+.nav_link {
+    display: inline-block; 
+}
+.product_link {
+    text-align: right;
+    padding-right: 60px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+}
+

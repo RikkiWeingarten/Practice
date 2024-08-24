@@ -1,3 +1,4 @@
+import random
 def sort_words(words):
     for word in sorted(words):
         print(word)
@@ -13,5 +14,10 @@ def longest_word(words):
     return long_word
 
 
-sort_words(['without', 'hello', 'bag', 'world'])
-print(longest_word(['without', 'hello', 'bag', 'world']))
+
+
+list_of_numbers = [random.randint(0, 10000) for _ in range(20000)]
+target_number   = 3728
+pairs = {}
+for num in list_of_numbers:
+    
