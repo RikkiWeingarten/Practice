@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <button id="clear">Clear Interval</button>
+    </body>
+    <script>
+        var childCount = 0;
+        function myAlert() {
+            alert("Hello World")
+        }
+        function paragraph() {
+            const container = document.getElementById('container');
+            const newElement = document.createElement('p');
+            newElement.textContent = "Hello World";
+            container.appendChild(newElement);
+            childCount+=1;
+            if (childCount >=5) {
+                clearInterval(interval);
+            }
+        }
+        setTimeout(myAlert, 2000);
+        setTimeout(paragraph, 2000);
+        
+        const interval = setInterval(paragraph, 2000)
+        const button = document.querySelector('button');
+        button.addEventListener('click', function() {
+            clearInterval(interval);
+        });
+
+        
+    </script>
+    </html>
