@@ -1,0 +1,38 @@
+
+<!-- Exercise 3 -->
+<p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
+    <strong>end</strong> you <strong>will</strong> be great Developers!
+    <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
+    <script>
+        var allBoldItems;
+
+        function getBoldItems() {
+            allBoldItems = document.querySelectorAll('strong');
+        };
+        
+        function highlight() {
+            getBoldItems();
+            allBoldItems.forEach(function(b) {
+                b.style.color = 'blue';
+            });
+        };
+        
+        function returnItemsToDefault() {
+            getBoldItems();
+            allBoldItems.forEach(function(b) {
+                b.style.color = 'black';
+            });
+        };
+        
+        const p = document.querySelector('p')
+        
+        p.addEventListener('mouseover', function() {
+ 
+            highlight();
+        
+        });
+
+        p.addEventListener('mouseout', function() {
+            returnItemsToDefault();
+        });
+    </script>

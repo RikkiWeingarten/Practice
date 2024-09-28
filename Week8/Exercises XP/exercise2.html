@@ -1,0 +1,49 @@
+<!-- Exercise 2 -->
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="firstname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lastname"><br><br>
+    <input type="submit" value="Submit" id="submit">
+  </form> 
+  <ul class="usersAnswer"></ul>
+  <script>
+    const form = document.querySelector('form')
+console.log(form)
+
+var fname = document.getElementById('fname')
+var lname = document.getElementById('lname')
+var submit = document.getElementById('submit')
+
+console.log(`fname: ${fname.value} lname: ${lname.value} submit: ${submit.value}`)
+
+fname = document.getElementsByName("firstname")
+lname = document.getElementsByName('lastname')
+
+console.log(`fname: ${fname[0].value} lname: ${lname[0].value}`)
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    fname = document.getElementById('fname')
+    lname = document.getElementById('lname')
+    if (fname === "" || lname === "") {
+        alert('Please fill in all fields')
+    }
+    else {
+        const ul = document.createElement("ul");
+        ul.className = "usersAnswer"; 
+
+        const liFirstName = document.createElement("li");
+        liFirstName.textContent = fname.value; 
+        const liLastName = document.createElement("li");
+        liLastName.textContent = lname.value; 
+
+        ul.appendChild(liFirstName);
+        ul.appendChild(liLastName);
+
+        form.insertAdjacentElement('afterend', ul);
+
+    }
+
+});
+  </script>
