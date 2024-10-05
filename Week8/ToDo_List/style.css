@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff3dae;
+    font-family: Arial, sans-serif;
+    flex-direction: column; /* This will stack the elements vertically */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+}
+
+input[type="text"] {
+    width: 250px;
+    color: grey;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: none;
+    color: #ff3dae;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.listTasks {
+    margin: 20px;
+    width: 28.5%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: grey;
+    background-color: white;
+    padding: 20px;
+
+}
+svg{
+    padding: 10px;
+    margin-right: 10px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888; /* Optional: Change the color to a lighter shade when crossed out */
+}
+
