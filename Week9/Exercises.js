@@ -44,16 +44,21 @@ const convertKG = (kg) => kg*1000;
 // Exercise 8
 
 function makeJuice(size) {
-    let ingredients;
+    const ingredients = [];
     function addIngredients(food1, food2, food3) {
-        ingredients.push(food1).push(food2).push(food3);
+        ingredients.push(food1);
+        ingredients.push(food2);
+        ingredients.push(food3);
     }
     addIngredients('banana', 'strawberry', 'mango');
     function displayJuice() {
         let str = `The client wants a ${size} juice, containing`;
-        ingredients.forEach()
-        alert(`The client wants a ${size} juice, containing ${food1}, ${food2}, ${food3}`)
+        ingredients.forEach(food => {
+            str += ` ${food},`;
+        });
+        alert(str)
     }
+    displayJuice()
 };
 makeJuice('small')
 
