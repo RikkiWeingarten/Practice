@@ -1,0 +1,8 @@
+form label, form input[type="text"], form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 20%; /* Makes inputs full-width; adjust if needed */
+}
+#name {
+    background-color: rgba(135, 195, 219, 0.603);
+}

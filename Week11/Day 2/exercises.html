@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="message-form" action="" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="comment">Comments</label>
+        <textarea id="comment" name="comment" placeholder="Write your comments here" rows="5" required></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+    <!-- The sent data appears in the URL -->
+
+    <form id="message-form-post" action="" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="comment">Comments</label>
+        <textarea id="comment" name="comment" placeholder="Write your comments here" rows="5" required></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+    <!-- The sent data appears in the network tab -->
+    <script src="index.js"></script>
+</body>
+</html>
