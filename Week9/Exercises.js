@@ -1,65 +1,60 @@
-// Exercise 1
-// #1.2 - You will get an error because const variable values cannot be changed.
-// #2.1 - It will send the alert with th 0 value and then throw the error that a const value cannot be changed.
-// #4.2 - It will run the function without errors
-// #5.2 - It will run the function without errors- it treats it like redeclaration
+//Exercise 1
+const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
-// Exercise 2
-function winBattle(){
-    return true;
-}
+colors.forEach((element, index) => {
+    console.log(`${index+1}# choice is ${element}`)
+});
 
-const winBattle2nd = () => true;
 
-const experiencePoints = winBattle() ? 10: 1;
-console.log(experiencePoints)
-
-// Exercise 3
-const isString = (str) => typeof str === 'string';
-
-// Exercise 4
-const sum = (a, b) => a + b;
-
-// Exercise 5
-function convertDeclaration(kg) {
-    return kg*1000;
+if (colors.some(color => color === "Violet")) {
+    console.log("Yeah");
+} else {
+    console.log("No...");
 };
-const convertExpression = function(kg) {
-    return kg*1000;
-};
-const convertKG = (kg) => kg*1000;
 
-// Exercise 6
-(function(numChildren, partnerName, location, jobTitle) {
-    alert(`You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${numChildren} kids."`);
-})(2,"Jim","Tel Aviv", "Biologist");
+//Exercise 2
+const ordinal = ["th","st","nd","rd"];
+colors.forEach((element, index) => {
+    const suffix = (index === 0) ? 'st' :
+                   (index === 1) ? 'nd' :
+                   (index === 2) ? 'rd' : 'th';
 
-// Exercise 7
+    console.log(`${index + 1}${suffix} choice is ${color}.`);
+});
 
-(function(name) {
-    const nav = document.querySelector('nav');
-    nav.innerHTML = `<div>${name}</div>`;
-})("Rikki Weingarten");
+//Exercise 3
+// you will get the vegetable list and fruit list added to the list.
+// You will get Each letter as an element in the array
+// Not sure what's happening with the bonus, why would there be two elements and not 3?
 
-// Exercise 8
-
-function makeJuice(size) {
-    const ingredients = [];
-    function addIngredients(food1, food2, food3) {
-        ingredients.push(food1);
-        ingredients.push(food2);
-        ingredients.push(food3);
-    }
-    addIngredients('banana', 'strawberry', 'mango');
-    function displayJuice() {
-        let str = `The client wants a ${size} juice, containing`;
-        ingredients.forEach(food => {
-            str += ` ${food},`;
-        });
-        alert(str)
-    }
-    displayJuice()
-};
-makeJuice('small')
+//Exercise 4
+const users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resident' },
+    { firstName: 'Chloe', lastName: 'Alnaji', role: 'Full Stack Resident' },
+    { firstName: 'Jonathan', lastName: 'Baughn', role: 'Enterprise Instructor' },
+    { firstName: 'Michael', lastName: 'Herman', role: 'Lead Instructor' },
+    { firstName: 'Robert', lastName: 'Hajek', role: 'Full Stack Resident' },
+    { firstName: 'Wes', lastName: 'Reid', role: 'Instructor'},
+    { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}];
 
 
+const welcomeStudents = users.map(user => `Hello ${user["firstName"]}`);
+
+const fullStack = users.filter(user => user["role"] == 'Full Stack Resident');
+const fullStackLastName = fullStack.map(user => user["lastName"]);
+
+//Exercise 5
+const epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+const sentence = epic.reduce((accumulator, currentValue) => accumulator + currentValue + " ","");
+
+//Exercise 6
+const students = [{name: "Ray", course: "Computer Science", isPassed: true}, 
+    {name: "Liam", course: "Computer Science", isPassed: false}, 
+    {name: "Jenner", course: "Information Technology", isPassed: true}, 
+    {name: "Marco", course: "Robotics", isPassed: true}, 
+    {name: "Kimberly", course: "Artificial Intelligence", isPassed: false}, 
+    {name: "Jamie", course: "Big Data", isPassed: false}];
+
+const passed = students.filter(student => student["isPassed"]);
+passed.forEach((student) => {
+    console.log(`Good job ${student["name"]}, you passed the course in ${student["course"]}`);
+});
