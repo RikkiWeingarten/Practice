@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-group {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 10px; 
+        }
+        #last-name, input[type="submit"] {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form id="name-form">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('name-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('name').value;
+            const lastName = document.getElementById('last-name').value;
+
+            const jsonData = { name: name, lastName: lastName };
+
+            const jsonString = JSON.stringify(jsonData);
+
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = jsonString;
+        });
+    </script>
+
+</body>
+</html>
