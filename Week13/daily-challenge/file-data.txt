@@ -1,0 +1,2 @@
+// Inside the files directory, create a file named file-data.txt and add some text content to it.
+
