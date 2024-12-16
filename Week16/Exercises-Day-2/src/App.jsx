@@ -44,6 +44,8 @@ export default class App extends React.Component {
       const res = await fetch(
         "https://webhook.site/797b6dd9-332f-4b7b-92d1-449dc49e2e5b", options
       );
+      const resJson = await res.text();
+      console.log("resJson:", resJson);
     } catch {
       console.error(err);
     }
