@@ -1,0 +1,5 @@
+.inactive {
+    text-decoration: line-through;
+    color: red; /* Optional: Makes inactive tasks look visually distinct */
+    cursor: not-allowed; /* Optional: Shows a non-clickable cursor */
+  }
